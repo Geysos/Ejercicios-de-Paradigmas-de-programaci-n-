@@ -1,89 +1,105 @@
+Segundo Ejercicios de Paradigmas de programación 
+
+1 Calculé la mitad de un número más su quinta parte 
+
 #include <stdio.h>
 
 int main() {
-    float velocidad_atun = 24.0; // Velocidad del atún en km/h
-    float distancia;
-    int horas;
+    float numero, mitad, quintaParte, resultado;
 
-    printf("Introduce el número de horas: ");
-    scanf("%d", &horas);
+    printf("Introduce un número: ");
+    scanf("%f", &numero);
 
-    // Calculamos la distancia recorrida
-    distancia = velocidad_atun * horas;
+    mitad = numero / 2;
+    quintaParte = numero / 5;
+    resultado = mitad + quintaParte;
 
-    printf("El atún nadará %.2f km en %d horas.\n", distancia, horas);
+    printf("La mitad del número más su quinta parte es: %.2f\n", resultado);
 
     return 0;
 }
 
+
+2 calcular el cuadrado de un número disminuido en 25
+
+
 #include <stdio.h>
+#include <math.h>
 
 int main() {
-    float distancia_pingüino = 120.0; // Distancia recorrida por el pingüino en km
-    int horas;
-    float distancia_total;
+    float numero, cuadrado;
 
-    printf("Introduce el número de horas: ");
-    scanf("%d", &horas);
+    printf("Introduce un número: ");
+    scanf("%f", &numero);
 
-    // Calculamos la distancia total
-    distancia_total = distancia_pingüino * horas;
+    cuadrado = pow(numero - 25, 2);
 
-    printf("El pingüino nadará %.2f km en %d horas.\n", distancia_total, horas);
+    printf("El cuadrado del número disminuido en 25 es: %.2f\n", cuadrado);
 
     return 0;
 }
 
+3 Calcular el cuadrado de x más el cuadrado de y más el cubo de z 
+
 #include <stdio.h>
+#include <math.h>
 
 int main() {
-    float distancia_antilope = 22.5; // Distancia recorrida por el antílope en km
-    int horas;
-    float distancia_total;
+    float x, y, z, resultado;
 
-    printf("Introduce el número de horas: ");
-    scanf("%d", &horas);
+    printf("Introduce el valor de x: ");
+    scanf("%f", &x);
+    printf("Introduce el valor de y: ");
+    scanf("%f", &y);
+    printf("Introduce el valor de z: ");
+    scanf("%f", &z);
 
-    // Calculamos la distancia total
-    distancia_total = distancia_antilope * horas;
+    resultado = pow(x, 2) + pow(y, 2) + pow(z, 3);
 
-    printf("El antílope habrá recorrido %.2f km en %d horas.\n", distancia_total, horas);
+    printf("El resultado es: %.2f\n", resultado);
 
     return 0;
 }
 
+4 Calcular el cuadrado de la suma de dos números 
+
 #include <stdio.h>
+#include <math.h>
 
 int main() {
-    int num_pasteles;
-    float harina_por_pastel = 3.0; // Cantidad de harina por pastel en kg
-    float cantidad_harina;
+    float num1, num2, suma, resultado;
 
-    printf("Introduce el número de pasteles a realizar: ");
-    scanf("%d", &num_pasteles);
+    printf("Introduce el primer número: ");
+    scanf("%f", &num1);
+    printf("Introduce el segundo número: ");
+    scanf("%f", &num2);
 
-    // Calculamos la cantidad de harina necesaria
-    cantidad_harina = (harina_por_pastel * num_pasteles) / 100.0;
+    suma = num1 + num2;
+    resultado = pow(suma, 2);
 
-    printf("La cantidad de harina a utilizar es: %.2f kg.\n", cantidad_harina);
+    printf("El cuadrado de la suma de los dos números es: %.2f\n", resultado);
 
     return 0;
 }
 
+
+5 Calcular el cuadrado de la diferencia de dos números 
+
 #include <stdio.h>
+#include <math.h>
 
 int main() {
-    int num_panes;
-    float costo_por_pan = 8.0; // Costo de un pan en bs
-    float costo_total;
+    float num1, num2, resta, resultado;
 
-    printf("Introduce el número de panes solicitados por el cliente: ");
-    scanf("%d", &num_panes);
+    printf("Introduce el primer número: ");
+    scanf("%f", &num1);
+    printf("Introduce el segundo número: ");
+    scanf("%f", &num2);
 
-    // Calculamos el costo total de la venta
-    costo_total = num_panes * costo_por_pan;
+    resta = num1 - num2;
+    resultado = pow(resta, 2);
 
-    printf("El costo total de la venta es: %.2f bs.\n", costo_total);
+    printf("El cuadrado de la diferencia de los dos números es: %.2f\n", resultado);
 
     return 0;
 }
